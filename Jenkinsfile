@@ -3,7 +3,8 @@ pipeline {
 	stages {
 		stage("Build") {
 			steps {
-				echo "Test"
+				echo "Build app"
+				mvn build
 			}
 		}
 	}
