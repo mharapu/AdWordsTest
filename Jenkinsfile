@@ -31,7 +31,7 @@ pipeline {
                                       value: 'jenkinsConfig',
                                       appName: 'adwords',
                                       memory: 64,
-                                      instances: 2
+                                      instances: '2'
                                     ]
                                 )
             }
