@@ -7,5 +7,11 @@ pipeline {
 				mvn build
 			}
 		}
+		stage("Test") {
+			steps {
+				echo "Testing app"
+				mvn test
+			}
+		}
 	}
 }
