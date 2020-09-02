@@ -17,6 +17,12 @@ pipeline {
         stage ('Build') {
             steps {
                 sh 'mvn -Dmaven.test.failure.ignore=true install'
+                pushToCloudFoundry(
+                  target: 'https://api.cap.explore.suse.dev',
+                  organization: 'mircea_harapu_gmail_com',
+                  cloudSpace: 'dev',
+                  credentialsId: 'mircea.harapu@gmail.com'
+                )
             }
             post {
                 success {
