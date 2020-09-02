@@ -30,7 +30,7 @@ pipeline {
                                    manifestChoice: [
                                       value: 'jenkinsConfig',
                                       appName: 'adwords',
-                                      memory: '512',
+                                      memory: '1024M',
                                       instances: '2',
                                       appPath: 'target/adwords-0.0.1-SNAPSHOT.jar'
                                     ]
