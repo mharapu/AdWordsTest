@@ -31,7 +31,8 @@ pipeline {
                                       value: 'jenkinsConfig',
                                       appName: 'adwords',
                                       memory: '64',
-                                      instances: '2'
+                                      instances: '2',
+                                      appPath: 'target/adwords-0.0.1-SNAPSHOT.jar'
                                     ]
                                 )
             }
