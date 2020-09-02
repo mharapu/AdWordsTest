@@ -30,7 +30,7 @@ pipeline {
                                    manifestChoice: [
                                       value: 'jenkinsConfig',
                                       appName: 'adwords',
-                                      memory: 64,
+                                      memory: '64',
                                       instances: '2'
                                     ]
                                 )
