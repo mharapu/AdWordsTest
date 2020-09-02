@@ -26,7 +26,13 @@ pipeline {
                                   target: 'https://api.cap.explore.suse.dev',
                                   organization: 'mircea_harapu_gmail_com',
                                   cloudSpace: 'dev',
-                                  credentialsId: 'cf_mircea'
+                                  credentialsId: 'cf_mircea',
+                                   manifestChoice: [
+                                      value: 'jenkinsConfig',
+                                      appName: 'adwords',
+                                      memory: 64,
+                                      instances: 2
+                                    ]
                                 )
             }
         }
